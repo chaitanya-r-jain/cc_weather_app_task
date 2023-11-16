@@ -2,9 +2,6 @@ import 'package:cc_weather_app_task/pages/cities.dart';
 import 'package:cc_weather_app_task/pages/forecast.dart';
 import 'package:flutter/material.dart';
 import 'package:cc_weather_app_task/get_data.dart';
-import 'package:cc_weather_app_task/g_signin.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
 
 void main() async {
   // await Firebase.initializeApp(
