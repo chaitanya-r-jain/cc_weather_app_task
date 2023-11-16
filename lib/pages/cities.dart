@@ -33,16 +33,15 @@ class ManageCities extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             child: Card(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
+                borderRadius: BorderRadius.circular(40.0),
               ),
               elevation: 0,
               color: Colors.grey[100],
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Row(
                   children: [
                     const SizedBox(
@@ -55,10 +54,16 @@ class ManageCities extends StatelessWidget {
                     const SizedBox(
                       width: 10,
                     ),
-                    Text(
-                      "Enter location",
-                      style: TextStyle(color: Colors.grey[500]),
-                    )
+                    const Expanded(
+                      child: SizedBox(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Enter Location',
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -70,9 +75,17 @@ class ManageCities extends StatelessWidget {
           Column(
             children: [
               CityTempWidget("Vidyavihar", 165, 40, 23, 39),
-              CityTempWidget("Delhi", 158, 39, 24, 37)
+              CityTempWidget("Delhi", 158, 39, 24, 37),
             ],
-          )
+          ),
+          // Expanded(
+          //   child: ListView.builder(
+          //     itemCount: countries.length,
+          //     itemBuilder: (context, index) {
+          //       return CityTempWidget(locations[index], 158, 39, 24, 37)
+          //     },
+          //   ),
+          // )
         ],
       ),
     );

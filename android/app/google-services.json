@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "395730220771",
+    "project_id": "cc-weather-app-52287",
+    "storage_bucket": "cc-weather-app-52287.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395730220771:android:4e24281fee59d7c8f877d6",
+        "android_client_info": {
+          "package_name": "com.example.cc_weather_app_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATX7Y_nEZarCsrbFzRmymQxxUdruDHQj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

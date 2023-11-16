@@ -2,8 +2,14 @@ import 'package:cc_weather_app_task/pages/cities.dart';
 import 'package:cc_weather_app_task/pages/forecast.dart';
 import 'package:flutter/material.dart';
 import 'package:cc_weather_app_task/get_data.dart';
+import 'package:cc_weather_app_task/g_signin.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   runApp(
     MaterialApp(
       routes: {
@@ -223,8 +229,8 @@ class _HomeState extends State<Home> {
                         builder: (context, snapshot) {
                           if (snapshot.connectionState ==
                               ConnectionState.done) {
-                                String highTemp = snapshot.data!.tempMax;
-                                String lowTemp = snapshot.data!.tempMin;
+                            String highTemp = snapshot.data!.tempMax;
+                            String lowTemp = snapshot.data!.tempMin;
                             return Text('$highTemp\u00B0 / $lowTemp\u00B0',
                                 style: const TextStyle(color: Colors.white));
                           } else {
